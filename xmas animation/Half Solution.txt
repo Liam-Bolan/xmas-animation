@@ -1,0 +1,38 @@
+﻿            // 1. Create variables to store height, width, framecount and framerate
+          
+            // 2. create a streamreader to access the xamsanimation.txt file
+         
+            //3. Read in the first four lines of the text file and get values for the variables you ccreated in 1.
+   
+            //Create a loop to read each frame in the animation file
+            for (int i = 0; i < framecount; i++)
+            {
+                //Create a nested loop to process each row
+                for (int j = 0; j < height; j++)
+                {
+                    //4. read a row of data in the loop
+                    
+                    // Create another nested loop to process each pixel in each row.
+                    for (int k = 0; k < width; k++)
+                    {
+
+                        //5. Convert each character in the row to its decimal value :- use the function HextoDecimal
+                        
+                        //6. Set console color using :-console.backgroundcolor=(ConsoleColor)pixelvalue
+                        // write a space onto the console.
+                       
+                    }
+		             //start a new row after the inner loop has finished for the next row
+                    Console.WriteLine();
+                }
+                //Pause between frames using
+				System.Threading.Thread.Sleep(1000/framerate)
+                
+                 //After the pause at the end of a frame  set the background to black and clear the screen
+                Console.BackgroundColor=ConsoleColor.Black;
+                Console.Clear();
+            }
+
+            //Close the stream reader after the loops have finished
+
+            r.Close();
